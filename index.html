@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="main_container">
+      <section id="flower_container">
+        <h1 id="flower_title">Flower I like</h1>
+        <ul>
+          <li>Rose</li>
+          <li>Bele</li>
+          <li>Kodom</li>
+        </ul>
+      </section>
+      <section id="fruits-container">
+        <h1 id="fruits_title" class="i_like me more">Fruits I like</h1>
+        <ul id="all_fev">
+          <li class="most_fev">Apple</li>
+          <li class="most_fev">Mango</li>
+          <li>Ject-fruit</li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      document.getElementById("flower_title").style.textAlign = "center";
+      let liCollection = document.getElementsByTagName("li");
+      // console.log(liCollection);
+      for (let li of liCollection) {
+        // console.log(li);
+      }
+
+      let someLi = document.querySelectorAll("#all_fev li");
+      // console.log(someLi);
+      for (let forLi of someLi) {
+        // console.log(forLi.innerText);
+        forLi.style.color = "blue";
+        forLi.style.backgroundColor = "pink";
+        forLi.style.marginBottom = "10px";
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
